@@ -19,7 +19,6 @@ public class MarsRover {
         }
     }
 
-
     private void move() {
         final int locationX = roverStatus.getLocationX();
         final int locationY = roverStatus.getLocationY();
@@ -71,14 +70,14 @@ public class MarsRover {
             newDirection = "W";
         } else if (direction.equals("E")) {
             newDirection = "S";
+        } else if (direction.equals("W")) {
+            newDirection = "N";
         }
 
         roverStatus = new RoverStatus(locationX, locationY, newDirection);
     }
 
-
     public RoverStatus getRoverStatus() {
         return roverStatus;
     }
-
 }
