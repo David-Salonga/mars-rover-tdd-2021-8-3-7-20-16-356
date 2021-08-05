@@ -1,5 +1,7 @@
 package com.afs.tdd;
 
+import java.util.Arrays;
+
 public class MarsRover {
 
 
@@ -9,7 +11,21 @@ public class MarsRover {
         this.roverStatus = roverStatus;
     }
 
-    public void executeCommand(String command) {
+    public static void main(String[] args) {
+        String instructions = "MLMR";
+        Arrays.stream(instructions.split("")).forEach(command -> System.out.println(command));
+        System.out.println(instructions.split(""));
+    }
+
+    public void executeCommand(String command) {//M
+
+        String[] singleCommands = command.split("");
+        for (String singleCommand : singleCommands) {
+            executeSingleCommand(singleCommand);
+        }
+    }
+
+    private void executeSingleCommand(String command) {
         if (command.equals("M")) {
             move();
         } else if (command.equals("L")) {
