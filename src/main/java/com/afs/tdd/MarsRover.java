@@ -11,8 +11,7 @@ public class MarsRover {
         this.roverStatus = roverStatus;
     }
 
-    public void executeCommand(String command) {//M
-
+    public void executeCommand(String command) {
         String[] singleCommands = command.split("");
         for (String singleCommand : singleCommands) {
             executeSingleCommand(singleCommand);
