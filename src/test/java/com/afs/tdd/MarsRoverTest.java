@@ -35,10 +35,10 @@ class MarsRoverTest {
     }
 
     @Test
-    void should_return_locationX_0_locationY_0_direction_W_when_execute_command_given_locationX_0_locationY_0_direction_N_and_R() {
+    void should_return_locationX_0_locationY_0_direction_E_when_execute_command_given_locationX_0_locationY_0_direction_N_and_R() {
         //given
         MarsRover marsRover = new MarsRover(new RoverStatus(0,0,"N"));
-        RoverStatus expectedRoverStatus = new RoverStatus(0,0,"W");
+        RoverStatus expectedRoverStatus = new RoverStatus(0,0,"E");
         //when
         marsRover.executeCommand("R");
         //then
