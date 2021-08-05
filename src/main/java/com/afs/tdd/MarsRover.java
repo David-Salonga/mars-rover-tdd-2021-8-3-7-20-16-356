@@ -11,12 +11,6 @@ public class MarsRover {
         this.roverStatus = roverStatus;
     }
 
-    public static void main(String[] args) {
-        String instructions = "MLMR";
-        Arrays.stream(instructions.split("")).forEach(command -> System.out.println(command));
-        System.out.println(instructions.split(""));
-    }
-
     public void executeCommand(String command) {//M
 
         String[] singleCommands = command.split("");
