@@ -26,6 +26,7 @@ public class MarsRover {
         final int locationY = roverStatus.getLocationY();
         final String direction = roverStatus.getDirection();
         int newLocationY = locationY;
+        int newLocationX = locationX;
             if(direction.equals("S")){
                 roverStatus = new RoverStatus(locationX, newLocationY - 1, direction);
             } else if(direction.equals("N")){
