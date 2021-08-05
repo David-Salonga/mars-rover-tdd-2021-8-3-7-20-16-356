@@ -20,5 +20,9 @@ public class RoverStatus {
         return locationY;
     }
 
+    public String getDirection() {
+        return direction;
+    }
+
 
 }
